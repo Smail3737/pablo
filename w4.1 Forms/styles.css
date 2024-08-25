@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("./fonts/OggLight.woff2") format("woff2");
+  src: url("./fonts/OggLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("./fonts/OggLightItalic.woff2") format("woff2");
+  src: url("./fonts/OggLightItalic.woff") format("woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("./fonts/OggMedium.woff2") format("woff2");
+  src: url("./fonts/OggMedium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "TradeGothic LT Extended";
+  src: url("./fonts/Trade\ Gothic\ LT\ Extended.woff2") format("woff2");
+  src: url("./fonts/Trade\ Gothic\ LT\ Extended.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TradeGothic LT Extended";
+  src: url("./fonts/Trade\ Gothic\ LT\ Extended.woff2") format("woff2");
+  src: url("./fonts/Trade\ Gothic\ LT\ Extended.woff") format("woff");
+  font-style: normal;
+}
+
+.common_wrapper {
+  display: flex;
+  max-width: 1440px;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 605px;
+  height: 907px;
+}
+
+@media (max-width: 364px) {
+  .wrapper {
+    margin-left: 50px;
+  }
+}
+
+.booking_phrase {
+  position: absolute;
+  font-family: "TradeGothic LT Extended";
+  opacity: 0.55;
+  width: 82px;
+  height: 28px;
+  margin-right: 1000px;
+  margin-top: 25px;
+}
+
+/* TITLE */
+
+.wrapper__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 570px;
+  height: 220px;
+}
+
+@media (max-width: 767px) {
+  .wrapper__title {
+    margin-left: 90px;
+  }
+}
+
+.first_title_container {
+  display: flex;
+  width: 400px;
+  height: 65px;
+}
+
+.first_title {
+  font-size: 60px;
+  font-family: "Ogg";
+}
+
+@media (max-width: 767px) {
+  .first_title {
+    font-size: calc(28px + (32 + 32 * 0.7) * ((100vw - 320px) / 1240));
+  }
+}
+
+.second_title_container {
+  display: flex;
+  align-self: flex-end;
+  width: 420px;
+  height: 56px;
+}
+
+.second_title {
+  font-size: 16px;
+  font-family: "TradeGothic LT Extended";
+  color: rgba(113, 135, 14, 1);
+}
+
+@media (max-width: 767px) {
+  .second_title {
+    font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1240));
+  }
+}
+
+/* FORM */
+
+.form-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 605px;
+  height: 523px;
+  margin-top: 100px;
+}
+
+@media (max-width: 767px) {
+  .form-main {
+    margin-left: 90px;
+    margin-right: 50px;
+  }
+}
+
+.first_form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media (max-width: 767px) {
+  .first_form {
+    gap: 25px;
+  }
+}
+
+.form_item {
+  width: 100%;
+  border-width: 0 0 1px 0;
+}
+textarea.form_item {
+  resize: none;
+  height: 22px;
+}
+textarea.form_item:focus {
+  height: 60px;
+}
+select.form_item option {
+  opacity: 0.7;
+}
+
+.form_item:focus {
+  outline: none;
+}
+
+.label {
+  font-size: 16px;
+  font-family: "Ogg";
+}
+
+.label_input {
+  display: flex;
+  flex-direction: column;
+}
+
+#email {
+  font-size: 16px;
+  font-family: "TradeGothic LT Extended";
+}
+
+#name {
+  font-size: 16px;
+  font-family: "TradeGothic LT Extended";
+}
+
+#message {
+  font-size: 16px;
+  font-family: "TradeGothic LT Extended";
+}
+
+#select {
+  font-size: 16px;
+  font-family: "TradeGothic LT Extended";
+}
+
+.footer-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 173px;
+}
+
+.last_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 160px;
+  height: 12px;
+  background-color: white;
+  border: none;
+}
+
+.last_button:hover {
+  opacity: 0.7;
+}
+
+.last_button:active {
+  opacity: 0.5;
+}
+
+.last_button::before {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 31px;
+  content: url("./line.png");
+  width: 84px;
+  height: 12px;
+}
+
+.send_phrase {
+  font-family: "TradeGothic LT Extended";
+  color: rgba(208, 160, 73, 1);
+}

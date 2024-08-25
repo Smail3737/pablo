@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="common_wrapper">
+    <div class="booking_phrase">
+      <span> (Booking) </span>
+    </div>
+    <div class="wrapper">
+      <div class="wrapper__title">
+        <div class="first_title_container">
+          <span class="first_title"> Send an email </span>
+        </div>
+        <div class="second_title_container">
+          <span class="second_title">
+            If you have a general or project enquiry, please drop me an email
+            — available now
+          </span>
+        </div>
+      </div>
+      <div class="form-main">
+        <form class="first_form" action="#" method="get">
+          <div class="label_input">
+            <label class="label" for="email">Email</label>
+            <br />
+            <input class="form_item" type="email" name="email" id="email" placeholder="Your email" required />
+          </div>
+
+          <div class="label_input">
+            <label class="label" for="name">Name</label>
+            <br />
+            <input class="form_item" type="name" name="name" id="name" placeholder="Name" required />
+          </div>
+
+          <div class="label_input">
+            <label class="label" for="message">Message</label>
+            <br />
+            <textarea class="form_item" type="message" name="message" id="message" placeholder="Message"></textarea>
+          </div>
+
+          <div class="label_input">
+            <label class="label" for="select">Project type</label>
+            <br />
+            <select id="select" class="form_item">
+              <option value="" disabled selected>Choose</option>
+              <option value="1">Something</option>
+              <option value="2">Something Else</option>
+              <option value="3">Other</option>
+              <option value="4">Etc</option>
+            </select>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox_id" />
+            <label class="label" for="#">I agree to receive ocasional newsletter with latest news and
+              updates</label>
+          </div>
+
+          <button class="last_button">
+            <span class="send_phrase">Send</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("./fonts/OggLight.woff2") format("woff2");
+  src: url("./fonts/OggLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("./fonts/OggLightItalic.woff2") format("woff2");
+  src: url("./fonts/OggLightItalic.woff") format("woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ogg";
+  src: url("./fonts/OggMedium.woff2") format("woff2");
+  src: url("./fonts/OggMedium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "TradeGothic LT Extended";
+  src: url("./fonts/Trade\ Gothic\ LT\ Extended.woff2") format("woff2");
+  src: url("./fonts/Trade\ Gothic\ LT\ Extended.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TradeGothic LT Extended";
+  src: url("./fonts/Trade\ Gothic\ LT\ Extended.woff2") format("woff2");
+  src: url("./fonts/Trade\ Gothic\ LT\ Extended.woff") format("woff");
+  font-style: normal;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+}
+
+.main-content {
+  display: flex;
+  max-width: 1440px;
+  flex-flow: row wrap;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 614px;
+  max-height: 550px;
+  margin-left: 106px;
+  margin-top: 215px;
+  justify-content: space-between;
+}
+
+@media (max-width: 1322px) {
+  .text-container {
+    max-width: 614px;
+    gap: 110px;
+    margin-left: 0px;
+    margin-top: 210px;
+    margin: 210px 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-container {
+    max-width: 614px;
+    gap: 110px;
+    margin-left: 0px;
+    margin-top: 210px;
+    margin: 210px 10px 0;
+  }
+}
+
+/* First text */
+
+.first-c {
+  max-width: 614px;
+  max-height: 192px;
+}
+
+@media (max-width: 767px) {
+  .first-c {
+    max-width: 614px;
+    max-height: 192px;
+    text-align: center;
+  }
+}
+
+.first-text-point {
+  font-size: 60px;
+  font-weight: 300;
+  font-family: "Ogg";
+}
+
+@media (max-width: 767px) {
+  .first-text-point {
+    font-size: calc(24px + (36 + 36 * 0.7) * ((100vw - 320px) / 1440));
+  }
+}
+
+span.green-tx {
+  color: rgba(113, 135, 14, 1);
+}
+
+span.bold-tx {
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Second text */
+
+.second-c {
+  margin-left: 149px;
+  max-width: 396px;
+  max-height: 168px;
+}
+
+@media (max-width: 767px) {
+  .second-c {
+    margin-left: 0px;
+    max-width: 396px;
+    max-height: 168px;
+  }
+}
+
+.second-text-point {
+  font-size: 16px;
+  font-family: "TradeGothic LT Extended";
+  opacity: 0.85;
+}
+
+@media (max-width: 767px) {
+  .second-text-point {
+    font-size: calc(12px + (4 + 4 * 0.7) * ((100vw - 320px) / 1440));
+  }
+}
+
+/* Third text */
+
+.third-c {
+  display: flex;
+  align-self: flex-start;
+}
+
+.third-text-point {
+  color: rgba(205, 154, 61, 1);
+}
+
+@media (max-width: 767px) {
+  .third-text-point {
+    color: rgba(205, 154, 61, 1);
+  }
+  .third-c {
+    align-self: flex-end;
+  }
+}
+
+.rm-class {
+  color: rgba(205, 154, 61, 1);
+  text-decoration: none;
+  margin-left: 28px;
+  font-family: "TradeGothic LT Extended";
+}
+
+.rm-class:hover {
+  opacity: 0.5;
+}
+
+.rm-class::before {
+  position: relative;
+  top: -3px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 31px;
+  content: url(/images/palka.png);
+  width: 84px;
+  height: 12px;
+}
+
+/* Image block */
+
+.image-holder {
+  display: flex;
+  font-family: "TradeGothic LT Extended";
+  flex-direction: column;
+}
+
+.image-main {
+  display: flex;
+  width: 464px;
+  height: 634px;
+  margin-top: 123px;
+}
+
+.image-back {
+  display: flex;
+  width: 260px;
+  height: 326px;
+  margin-top: -426px;
+  margin-left: 343px;
+}
+
+@media (max-width: 767px) {
+  .image-back {
+    margin-top: -228px;
+    margin-left: 132px;
+  }
+  .image-holder {
+    overflow: clip visible;
+  }
+}
+
+.last-text {
+  display: inline-block;
+  color: rgba(113, 135, 14, 1);
+  margin-top: 175px;
+  margin-left: 126.5px;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .last-text {
+    display: none;
+  }
+}
